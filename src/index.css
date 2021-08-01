@@ -11,3 +11,157 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.task-app{
+  width: 30rem;
+  margin: 1rem auto;
+}
+.header{
+  display: flex;
+  padding: 2rem;
+  background-color: brown;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 0rem auto;
+}
+
+
+.header h2{
+  text-transform: uppercase;
+  color: #fff;
+}
+.button{
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+.task{
+  background-color: rgba(0,0,0, .1);
+  
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  text-transform: capitalize;
+}
+.task h3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -.6rem;
+}
+.task .icon{
+  color: red;
+  cursor: pointer;
+}
+
+.reminder{
+  border-left: .5rem solid green;
+  /* height: 100%; */
+}
+.form{
+  
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.form-group input{
+  margin-top: .5rem;
+  padding: .7rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  box-shadow: inset .1rem .1rem .3rem rgba(0,0,0, .2), inset -.2rem -.1rem .3rem rgba(233, 227, 227, 0.2) ;
+}
+
+.form-group input:focus{
+  box-shadow:  .1rem .1rem .3rem rgba(0,0,0, .2),  -.1rem -.1rem .3rem rgba(233, 227, 227, 0.2) ;
+}
+
+.form-group-check{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-group-check label{
+  background-color: rgba(0, 128, 0, .2);
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form .submit{
+  align-self: center;
+  background-color: black;
+  padding: .7rem 1rem;  
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 15rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.form .submit:hover{
+  transform: translateY(-.1rem);
+}
+
+.form-group-check input{
+  display: none;
+}
+
+.form-group-check input:checked ~ label{
+  background-color: green;
+  color: #fff;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  padding: .3rem 2rem;
+  background-color: brown;
+  transition: all .3s;
+}
+
+footer a:hover{
+  transform: translateX(.1rem);
+}
+
+.about a{
+  text-decoration: none;
+  color: #fff;
+  padding: .3rem 2rem;
+  background-color: brown;
+  transition: all .3s;
+}
+
+.about a:hover{
+  transform: translateX(.1rem);
+}
+
+
+@media only screen and (max-width: 42em){
+  .task-app{
+    width: 80vw;
+  }
+  
+}
